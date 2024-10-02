@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Cabecalho from './components/Cabecalho/Cabecalho';
 import Menu from './components/Menu/Menu';
 import Rodape from './components/Rodape/Rodape';
+import '../app/globals.css';
 
 interface NasaImage {
   caption: string;
@@ -18,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('/api/nasa');
+        const response = await fetch('/api/route');
         const data = await response.json();
 
         if (response.ok) {
