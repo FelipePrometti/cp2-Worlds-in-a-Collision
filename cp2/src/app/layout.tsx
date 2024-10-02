@@ -10,7 +10,6 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
   return (
     <html lang="pt-br">
       <body>
-        <Menu/>
         {children}
       </body>
     </html>
