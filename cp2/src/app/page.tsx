@@ -1,7 +1,7 @@
 export default function Home(){
   return(
     <div>
-      <h1>Pagina Principal</h1>
+      <h1>Worlds in Collision</h1>
     </div>
   )
 }
